@@ -1,0 +1,122 @@
+html{
+  background-color: black;
+  color: white;
+}
+
+h1{
+text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+color: #17202A;
+}
+
+.principal{
+position: absolute;
+width: 800px;
+height: 650px;
+background-color: #F0F3F4;
+left:400px;
+color: #17202A;
+text-align: center;
+font-size: 30px;
+font-family: 'Russo One';
+border-radius: 20px;
+}
+
+.firstText{
+  background-color: #D5D8DC;
+  text-align: center;
+  outline: none;
+  border: solid 2px #17202A;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: 'Russo One';
+}
+
+.secondText{
+  background-color: #D5D8DC;
+  text-align: center;
+  outline: none;
+  border: solid 2px #17202A;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: 'Russo One';
+}
+
+#click1{
+  border-radius:10px;
+  border:1px solid #4e6096;
+  background-color: #F0F3F4;
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+  font-family: 'Russo One';
+  left:35px;
+  position: relative;
+  top:20px;
+}
+
+#button{
+  border-radius:10px;
+  border:1px solid #4e6096;
+  background-color: #F0F3F4;
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+  font-family: 'Russo One';
+  left:35px;
+  position: relative;
+  top:20px;
+}
+
+#sectionMore{
+  display: none;
+}
+
+#instructions{
+  display: none;
+}
+
+.box{
+  background-color: black;
+  color: black;
+  border: 2px solid #4074b5;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#value{
+  color: white;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cifrar{
+  border-radius:10px;
+  border:1px solid #4e6096;
+  background-color: #F0F3F4;
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+  font-family: 'Russo One';
+  left:35px;
+  position: relative;
+  top:20px;
+}
+
+#descifrar{
+  border-radius:10px;
+  border:1px solid #4e6096;
+  background-color: #F0F3F4;
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+  font-family: 'Russo One';
+  left:35px;
+  position: relative;
+  top:20px;
+}

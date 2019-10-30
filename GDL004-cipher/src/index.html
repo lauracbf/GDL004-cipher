@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+<div class="principal" id="root">
+
+  <h1>Protekta Cipher</h1>
+
+  <form class="first">
+
+    <textarea class="firstText" rows="5" cols="55" placeholder="Escribe aquí..." maxlength="250" minlength="1" autofocus required></textarea><br>
+    <input type="range" class="slider" id="slider" min="1" max="100" value="50" ><br>
+
+
+  </form>
+
+    <textarea class="secondText" rows="5" cols="55" maxlength="250" minlength="1" required></textarea>
+    <div class="box" id="value"></div>
+
+    <br>
+
+    <input type="submit" id="cifrar" value="Cifrar">
+    <input type="submit" id="descifrar" value="Descifrar">
+
+</div>
+
+<button class="button" id="click1" onclick="showInstructions ()">Instrucciones</button>
+<br>
+<br>
+
+<div class="instructions" id="instructions">
+
+  <p>Instrucciones para cifrado:</p>
+
+    <ol>
+     <li> Escribe tu texto en el recuadro. </li>
+     <li> Elige una clave númerica de uno o dos digitos e introduce el número elegido en la sección de clave. Esta clave debes compartirla con la persona que tendra que descifrar el mensaje.</li>
+     <li> Presiona el botón de cifrar </li>
+     <li> Copia el mensaje cifrado que aparecerá en la parte inferior. Listo! ahora puedes enviar información de una manera segura.</li>
+   </ol>
+
+   <p>Instrucciones para descifrar:</p>
+
+   <ol>
+    <li> Escribe tu texto cifrado en el recuadro. </li>
+    <li> Escribe la clave proporcionada por la persona que envió la infomación.</li>
+    <li> Presiona el botón de descifrar. </li>
+    <li> Listo! ya puedes leer el mensaje en la parte inferior.</li>
+  </ol>
+
+    <p>Recuerda que la clave es muy importante ya que te ayudará a cifrar o descifrar el mensaje asi que debes mantenerla segura.</p>
+</div>
+
+<button class="button" id="button" onclick="showMore()">Saber más...</button>
+
+<div class="sectionMore" id="sectionMore">
+    <p>Bienvenido a Protekta Cipher la aplicación que te ayudará a enviar y recibir informacion de manera segura.</p>
+</div>
+
+<!--<img id="imageOne" src="https://www.kadencesolutions.ca/wp-content/uploads/2016/08/castle-2688940__340-300x127.png" alt="imagen candado">-->
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
