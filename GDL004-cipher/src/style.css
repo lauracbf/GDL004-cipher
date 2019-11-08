@@ -4,21 +4,21 @@ html{
 }
 
 h1{
-text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
-color: #17202A;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  color: #17202A;
 }
 
 .principal{
-position: absolute;
-width: 800px;
-height: 650px;
-background-color: #F0F3F4;
-left:400px;
-color: #17202A;
-text-align: center;
-font-size: 30px;
-font-family: 'Russo One';
-border-radius: 20px;
+  position: absolute;
+  width: 800px;
+  height: 650px;
+  background-color: #F0F3F4;
+  left:400px;
+  color: #17202A;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Russo One';
+  border-radius: 20px;
 }
 
 .firstText{
@@ -29,6 +29,7 @@ border-radius: 20px;
   border-radius: 15px;
   font-size: 15px;
   font-family: 'Russo One';
+  margin-bottom: 25px;
 }
 
 .secondText{
@@ -39,6 +40,7 @@ border-radius: 20px;
   border-radius: 15px;
   font-size: 15px;
   font-family: 'Russo One';
+
 }
 
 #click1{
@@ -52,9 +54,16 @@ border-radius: 20px;
   left:35px;
   position: relative;
   top:20px;
+  outline: none;
 }
 
-#button{
+#click1:hover{
+  background: #6668FA;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+#button1{
   border-radius:10px;
   border:1px solid #4e6096;
   background-color: #F0F3F4;
@@ -65,14 +74,84 @@ border-radius: 20px;
   left:35px;
   position: relative;
   top:20px;
+  outline: none;
+}
+
+#button1:hover{
+  background: #6668FA;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.slider{
+  -webkit-appearance: none;
+  width: 450px;
+  height: 15px;
+  border-radius: 5px;
+  background: #6668FA;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
 }
 
 #sectionMore{
   display: none;
+  width: 750px;
+  height: 600px;
+  position: absolute;
+  background-color: #D5D8DC;
+  color: black;
+  text-align: justify;
+  padding: 20px;
+  font-family: 'Russo One';
+  font-weight: lighter;
+  font-size: 15px;
+  left: 22px;
+  border-radius: 15px;
+  left: 400px;
+  top: 10px;
+
 }
 
 #instructions{
   display: none;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-color: #F0F3F4;
+  color: black;
+  text-align: justify;
+  padding: 20px;
+  font-family: 'Russo One';
+  font-weight: lighter;
+  font-size: 12px;
+  left: 22px;
+  border-radius: 15px;
+  top: 10px;
 }
 
 .box{
@@ -83,6 +162,7 @@ border-radius: 20px;
   width: 80px;
   border-radius: 50%;
   margin: auto;
+
 }
 
 #value{
@@ -106,6 +186,13 @@ border-radius: 20px;
   left:35px;
   position: relative;
   top:20px;
+  outline: none;
+}
+
+#cifrar:hover{
+  background: #6668FA;
+  transition-duration: 500ms;
+  cursor: pointer;
 }
 
 #descifrar{
@@ -119,4 +206,11 @@ border-radius: 20px;
   left:35px;
   position: relative;
   top:20px;
+  outline: none;
+}
+
+#descifrar:hover{
+  background: #6668FA;
+  transition-duration: 500ms;
+  cursor: pointer;
 }

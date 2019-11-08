@@ -4,39 +4,44 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+  <!--Font-->   <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
   </head>
 
 <body>
+<!--Vista principal de la pantalla-->
+<main>
 
 <div class="principal" id="root">
 
   <h1>Protekta Cipher</h1>
 
-  <form class="first">
+<!--<form class="first">-->
+<!--Area donde se introduce el texto-->
+    <textarea class="firstText" id="firstText" rows="5" cols="55" placeholder="Escribe aquí..." maxlength="250" minlength="1" autofocus required></textarea><br>
 
-    <textarea class="firstText" rows="5" cols="55" placeholder="Escribe aquí..." maxlength="250" minlength="1" autofocus required></textarea><br>
+<!--Slider para obtener offset-->
     <input type="range" class="slider" id="slider" min="1" max="100" value="50" ><br>
-
-
-  </form>
-
-    <textarea class="secondText" rows="5" cols="55" maxlength="250" minlength="1" required></textarea>
+<br>
+<!--Area donde se muestra el texto cifrado-->
+    <textarea class="secondText" id="secondText" rows="5" cols="55" maxlength="250" minlength="1"></textarea>
+<!--Area donde se muestra el valor de slider-->
     <div class="box" id="value"></div>
-
-    <br>
-
+<!--Botones de cifrar y descifrar-->
     <input type="submit" id="cifrar" value="Cifrar">
     <input type="submit" id="descifrar" value="Descifrar">
+<!--</form>-->
 
 </div>
+</main>
+<!--Termina vista principal de la pantalla-->
 
-<button class="button" id="click1" onclick="showInstructions ()">Instrucciones</button>
+<!--Botón de instrucciones-->
+<button class="button" id="click1">Instrucciones</button>
 <br>
 <br>
-
+<!--Espacio donde se muestran las instrucciones-->
 <div class="instructions" id="instructions">
-
+<!--Instrucciones-->
   <p>Instrucciones para cifrado:</p>
 
     <ol>
@@ -55,16 +60,27 @@
     <li> Listo! ya puedes leer el mensaje en la parte inferior.</li>
   </ol>
 
-    <p>Recuerda que la clave es muy importante ya que te ayudará a cifrar o descifrar el mensaje asi que debes mantenerla segura.</p>
+    <strong><p>Recuerda que la clave es muy importante ya que te ayudará a cifrar o descifrar el mensaje asi que debes mantenerla segura.</p></strong>
 </div>
+<!--Terminan las instrucciones-->
 
-<button class="button" id="button" onclick="showMore()">Saber más...</button>
+<!--Botón para saber más-->
+<button class="button" id="button1">Saber más...</button>
 
+<!--Espacio para mostrar información de saber mas...-->
 <div class="sectionMore" id="sectionMore">
-    <p>Bienvenido a Protekta Cipher la aplicación que te ayudará a enviar y recibir informacion de manera segura.</p>
+
+<!--infomación de saber más-->
+    <h1>¿Cómo funciona?</h1>
+    <p>El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.</p>
+    <p>Es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+      Por ejemplo, si usamos un desplazamiento (offset) de 3 posiciones:</p>
+    <p>La letra A se cifra como D.</p>
+    <p>La palabra CASA se cifra como FDVD.</p>
+    <p>Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+    <p>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</p>
 </div>
 
-<!--<img id="imageOne" src="https://www.kadencesolutions.ca/wp-content/uploads/2016/08/castle-2688940__340-300x127.png" alt="imagen candado">-->
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
